@@ -11,8 +11,6 @@ LABEL com.github.actions.icon="package"
 LABEL com.github.actions.color="red"
 COPY LICENSE README.md /
 
-RUN mongod --fork --syslog
-
 COPY "entrypoint.sh" "/entrypoint.sh"
 RUN ["chmod", "+x", "/entrypoint.sh"]
 ENTRYPOINT ["/entrypoint.sh"]
