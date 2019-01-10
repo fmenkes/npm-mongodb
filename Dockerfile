@@ -14,5 +14,6 @@ COPY LICENSE README.md /
 RUN mongod --fork --syslog
 
 COPY "entrypoint.sh" "/entrypoint.sh"
+RUN ["chmod", "+x", "/entrypoint.sh"]
 ENTRYPOINT ["/entrypoint.sh"]
 CMD ["help"]
