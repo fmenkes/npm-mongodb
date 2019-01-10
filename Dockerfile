@@ -1,4 +1,4 @@
-FROM fmenkes/node:10.15.0-mongodb
+FROM fmenkes/node:8.11.3-mongodb
 
 LABEL version="0.0.1"
 LABEL repository="http://github.com/fmenkes/npm-mongodb"
